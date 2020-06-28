@@ -3,7 +3,7 @@ layout: single
 title:  "What's new in Location!"
 date:   2020-06-28 10:49:00 +0530
 categories: ["WWDC20"]
-tags: ["iOS", "CoreLocation", "Swift", "WWDC"]
+tags: ["iOS", "CoreLocation", "Swift", "WWDC20", "iOS14"]
 ---
 WWDC20 has added major features in Location for the sake of user's privacy. In this post I'll try to explain what has changed for good and what's new :point_down:
 
@@ -37,6 +37,27 @@ Additionally in iOS 14:
 
 The new delegate method will be called whenever the user change the *authorization status or accuracy*. This means you can handle both inside the delegate.
 
+```
+  var gettingExactLocation: Bool = false
+  var gotSomeKindOfPermission: Bool = false
+  func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+  
+    switch manager.authorizationStatus {
+    case .authorizedAlways, .authorizedWhenInUse:
+      gotSomeKindOfPermission = true
+    case .denied, .notDetermined, .restricted:
+      gotSomeKindOfPermission = false
+    }
+
+    switch manager.accuracyAuthorization {
+    case .reducedAccuracy:
+      gettingExactLocation = false
+    case .fullAccuracy:
+      gettingExactLocation = true
+    }
+  }
+```
+
 > Now let's talk about how object `CLLocation` will be delivered with `reducedAccuracy`
 
 - Firstly, it will be recomputed only *4 times per hour*
@@ -49,7 +70,7 @@ The new delegate method will be called whenever the user change the *authorizati
 
 I know region monitoring plays an important role in many reminder apps, so
 
-> What your app should do to incorporate the new `Precise` mode? :confused: 
+> What your app should do to adapt to the new `Precise` mode? :confused: 
 
 - Your app can ask for *temporary permission* to full accuracy with a `purpose key` which will be defined in the `Info.plist` file of your app. The purpose key justifies *why your app needs temporary full accuracy*? Also, you'll have full accuracy for the rest of the session
 - The less desirable way to get rid of most of your problems is still the same, which is to navigate users to Settings app and ask them to grant full accuracy permanently :wink: 

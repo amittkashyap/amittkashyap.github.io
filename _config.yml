@@ -61,9 +61,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/amittkashyap"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:amitkashyap.reads@gmail.com"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/amittkashyap/"
 
 footer:
   links:
@@ -73,9 +73,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/amittkashyap"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/humansofnocolor"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/amittkashyap/"
 
 defaults:
   # _posts
