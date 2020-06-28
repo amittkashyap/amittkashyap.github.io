@@ -13,10 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Welcome to The Curiosity Voyage!
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Follow me while I meddle with iOS and Android :rocket
+title: Welcome to The Curiosity Voyage
+description: "Follow me while I meddle with iOS and Android :rocket"
 twitter_username: amittkashyap
 github_username: amittkashyap
 minimal_mistakes_skin: dark
@@ -27,8 +25,8 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -58,20 +56,14 @@ plugins:
 author:
   name   : "Amit Kashyap"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "iOS at Grab. Learning Kotlin."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/amittkashyap"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/amittkashyap"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/iamfunnypants"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "amitkashyap.reads@gmail.com"
 
 footer:
   links:
@@ -83,7 +75,7 @@ footer:
       url: "https://github.com/amittkashyap"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/iamfunnypants"
+      url: "https://instagram.com/humansofnocolor"
 
 defaults:
   # _posts
@@ -94,9 +86,9 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
-      related: true
+      related: false
   # _pages
   - scope:
       path: "_pages"
