@@ -63,7 +63,7 @@ author:
       url: "https://twitter.com/amittkashyap"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "amitkashyap.reads@gmail.com"
+      url: "mailto:amitkashyap.reads@gmail.com"
 
 footer:
   links:

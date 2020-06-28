@@ -11,7 +11,7 @@ I'm sure some of us have asked this question at some point: Does the app needs t
 
 Most often, the answer is *no* :no_mouth:
 
-> So Apple has come with a new option “Precise” for accuray, when app asks for location permission
+> So Apple has come up with a new option “Precise” for accuray, when app asks for location permission!
 
 ![Precise Option](/assets/images/whats-new-in-location.png)
 
@@ -27,9 +27,11 @@ enum CLAccuracyAuthorization {
   case reducedAccuracy
 }
 ```
-- iOS 14 is deprecating the `authorizationStatus() class func` method and instead it will be a `property`
+Additionally in iOS 14: 
 
-- Also deprecating the old delegate method as pointed here :point_down: 
+- the `authorizationStatus() class func` method will be deprecated and instead it will be a `property`
+
+- Also, deprecating the old delegate method as pointed here :point_down: 
 
 ![New API](/assets/images/callback.png)
 
