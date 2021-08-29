@@ -56,7 +56,7 @@ plugins:
 author:
   name   : "Amit Kashyap"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "iOS at Grab. Learning Kotlin."
+  bio    : "iOS at Grab. Learning Kotlin/Flutter."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
