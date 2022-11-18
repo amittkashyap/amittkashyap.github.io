@@ -20,6 +20,9 @@ github_username: amittkashyap
 minimal_mistakes_skin: dark
 search: true
 
+# Google Analytics
+google_analytics: UA-171014834-1
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
