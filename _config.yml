@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Welcome to The Curiosity Voyage
-description: "Follow me while I meddle with iOS and Android :rocket"
+description: "Follow me while I meddle with Software and other stuff"
 twitter_username: amittkashyap
 github_username: amittkashyap
 minimal_mistakes_skin: dark
@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Amit Kashyap"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "iOS at Grab. Learning Kotlin/Flutter."
+  bio    : "Senior Software Engineer(Mobile/iOS) at Grab."
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
